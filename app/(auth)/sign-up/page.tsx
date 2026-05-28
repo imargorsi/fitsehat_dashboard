@@ -33,7 +33,7 @@ export default function SignUp() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 w-full">
             <InputField
                 name="name"
                 label="Full Name"
@@ -76,7 +76,7 @@ export default function SignUp() {
             />
 
             <div className="pt-2">
-                <Button type="submit" className="w-full">
+                <Button type="submit" size="lg" className="w-full">
                     Create Account
                 </Button>
             </div>

@@ -28,10 +28,10 @@ const AuthFormWrapper: React.FC<AuthFormWrapperProps> = ({
     const pathname = usePathname()
     const isSignIn = pathname === "/sign-in"
     const title = isSignIn ? "Welcome Back" : "Create Account"
-    const subtitle = isSignIn ? "Step into the elite fitness ecosystem." : "Join the elite fitness ecosystem and unlock your full potential."
+    const subtitle = isSignIn ? "Step into the elite fitness ecosystem to unlock your potential." : "Join the elite fitness ecosystem and unlock your full potential."
     return (
         <div className="min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-md p-6">
+            <div className="w-full max-w-md p-4">
                 <header className="mb-6">
                     <h2 className="text-3xl font-semibold text-foreground">{title}</h2>
                     <p className="mt-2 text-sm text-foreground/70">{subtitle}</p>
